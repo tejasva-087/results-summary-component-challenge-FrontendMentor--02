@@ -1,0 +1,166 @@
+@font-face {
+  font-family: HankenGrotesk;
+  src: url(/assets/fonts/HankenGrotesk-VariableFont_wght.ttf);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: HankenGrotesk;
+  color: hsla(222, 100%, 96%, 0.739);
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.main-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  border-radius: 3.8rem;
+  overflow: hidden;
+  box-shadow: 20px 20px 50px hsl(221, 100%, 96%);
+}
+
+.column-1 {
+  text-align: center;
+  width: 38rem;
+  padding: 4rem 4.8rem;
+  background-image: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+  z-index: 1;
+  border-radius: 3.8rem;
+}
+
+.text-top {
+  font-size: 2.8rem;
+  margin-bottom: 8rem;
+}
+
+.score {
+  position: relative;
+  margin-bottom: 7.4rem;
+}
+
+.bg-circle::after {
+  content: "";
+  width: 22rem;
+  height: 22rem;
+  position: absolute;
+  top: 50%;
+  right: 50%;
+  background-image: linear-gradient(
+    to bottom,
+    hsla(256, 72%, 46%, 1),
+    hsla(241, 72%, 46%, 0)
+  );
+  z-index: -1;
+  transform: translate(50%, -50%);
+  border-radius: 50%;
+}
+
+.score-big {
+  font-size: 7.4rem;
+  font-weight: 800;
+  color: hsl(0, 0%, 100%);
+}
+
+.score-text {
+  font-size: 2rem;
+  color: hsla(222, 100%, 96%, 0.439);
+}
+
+.word {
+  font-size: 3.8rem;
+  margin-bottom: 2.4rem;
+  color: hsl(0, 0%, 100%);
+}
+
+.text-bottom {
+  font-size: 2rem;
+  margin-bottom: 1.4rem;
+}
+
+.column-2 {
+  padding: 4rem 4.8rem;
+  color: hsl(224, 30%, 27%);
+}
+
+.column-2 .text-top {
+  font-weight: 500;
+  margin-bottom: 3.8rem;
+}
+
+.boxes {
+  display: flex;
+  flex-direction: column;
+  gap: 2.2rem;
+  margin-bottom: 3.8rem;
+}
+
+.box {
+  display: grid;
+  grid-template-columns: 1fr 3fr 2fr;
+  font-size: 1.8rem;
+  font-weight: 500;
+  padding: 1.8rem 1.2rem;
+  border-radius: 1.2rem;
+}
+
+#reaction {
+  color: hsl(0, 100%, 67%);
+}
+
+.reaction {
+  background-color: hsla(0, 100%, 67%, 0.099);
+}
+
+#memory {
+  color: hsl(39, 100%, 56%);
+}
+
+.memory {
+  background-color: hsla(39, 100%, 56%, 0.099);
+}
+
+#verbal {
+  color: hsl(166, 100%, 37%);
+}
+
+.verbal {
+  background-color: hsla(166, 100%, 37%, 0.099);
+}
+
+#visual {
+  color: hsl(234, 85%, 45%);
+}
+
+.visual {
+  background-color: hsla(234, 85%, 45%, 0.099);
+}
+
+.btn {
+  width: 100%;
+  padding: 1.6rem 1.2rem;
+  font-size: 1.8rem;
+  border: none;
+  border-radius: 2.5rem;
+  background-color: hsl(224, 30%, 27%);
+  color: hsl(0, 0%, 100%);
+}
+
+.btn:hover {
+  background-image: linear-gradient(
+    to bottom,
+    rgb(97, 49, 230),
+    hsla(241, 81%, 54%, 0.92)
+  );
+  cursor: pointer;
+}

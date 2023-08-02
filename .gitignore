@@ -1,0 +1,11 @@
+*.sketch
+*.fig
+*.xd
+.DS_Store
+.prettierignore
+/design
+*.json
+README-template.md
+README-FrontendMentor.md
+style-guide.md
+text.txt
