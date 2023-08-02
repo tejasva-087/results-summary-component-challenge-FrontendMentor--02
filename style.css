@@ -13,13 +13,15 @@ html {
   font-size: 62.5%;
 }
 
-body {
+.container {
   font-family: HankenGrotesk;
   color: hsla(222, 100%, 96%, 0.739);
   height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
+  gap: 1.4rem;
 }
 
 .main-container {
@@ -181,6 +183,16 @@ body {
   }
 
   .text-bottom {
-    font-size: 1.8rem;
+    font-size: 3rem;
   }
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  color: hsl(224, 30%, 27%);
+}
+.attribution a:link,
+.attribution a:visited {
+  color: hsl(228, 45%, 44%);
 }
