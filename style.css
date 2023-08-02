@@ -164,3 +164,23 @@ body {
   );
   cursor: pointer;
 }
+
+@media (max-width: 375px) {
+  html {
+    font-size: 62.5%;
+  }
+  .main-container {
+    margin-top: 40rem;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+
+  .bg-circle::after {
+    width: 20rem;
+    height: 20rem;
+  }
+
+  .text-bottom {
+    font-size: 1.8rem;
+  }
+}
